@@ -2169,28 +2169,32 @@ apiRouter.post('/supabase/sync-all', async (req, res) => {
 // Mount consolidated endpoints to Express server
 app.use('/api', apiRouter);
 
-// Start our primary full-stack hosting routine
-async function startServer() {
-  // Mount Vite development middlewares first, or serve bundled production output
-  if (process.env.NODE_ENV !== 'production') {
-    const vite = await createViteServer({
-      server: { middlewareMode: true },
-      appType: 'spa'
+if (process.env.VERCEL) {
+  // Export express app for Vercel serverless function
+  module.exports = app;
+} else {
+  // Start our primary full-stack hosting routine
+  async function startServer() {
+    if (process.env.NODE_ENV !== 'production') {
+      const vite = await createViteServer({
+        server: { middlewareMode: true },
+        appType: 'spa'
+      });
+      app.use(vite.middlewares);
+      console.log('Vite middleware mounted in Development mode.');
+    } else {
+      const distPath = path.join(process.cwd(), 'dist');
+      app.use(express.static(distPath));
+      app.get('*', (req, res) => {
+        res.sendFile(path.join(distPath, 'index.html'));
+      });
+      console.log('Serving prepared production builds from dist.');
+    }
+
+    app.listen(PORT, '0.0.0.0', () => {
+      console.log(`CoopMart server listening on http://localhost:${PORT}`);
     });
-    app.use(vite.middlewares);
-    console.log('Vite middleware mounted in Development mode.');
-  } else {
-    const distPath = path.join(process.cwd(), 'dist');
-    app.use(express.static(distPath));
-    app.get('*', (req, res) => {
-      res.sendFile(path.join(distPath, 'index.html'));
-    });
-    console.log('Serving prepared production builds from dist.');
   }
 
-  app.listen(PORT, '0.0.0.0', () => {
-    console.log(`CoopMart server listening on http://localhost:${PORT}`);
-  });
+  startServer();
 }
-
-startServer();
