@@ -17,6 +17,7 @@ import {
   X
 } from 'lucide-react';
 import { UserSession } from '../types';
+import { DEMO_DATA } from '../data/demoData';
 
 interface LoginPageProps {
   onLoginSuccess: (user: UserSession, token: string) => void;
@@ -103,8 +104,29 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
         setErrorMessage('Unexpected server response format.');
       }
     } catch (err) {
-      console.error('Login error:', err);
-      setErrorMessage('Unable to connect to authentication server. Please try again.');
+      console.warn('Login API unreachable, using client-side demo fallback:', err);
+      
+      // STATIC FALLBACK: If API is unreachable (Netlify drag-and-drop), 
+      // allow entry if name/flat are provided (Demo Mode)
+      if (cleanName && cleanFlat) {
+        const existingMember = (DEMO_DATA.members || []).find((m: any) => 
+          m.name.toLowerCase().includes(cleanName.toLowerCase()) && 
+          m.flatNo.toLowerCase().includes(cleanFlat.toLowerCase())
+        );
+
+        const mockUser: UserSession = {
+          memberId: existingMember?.id || `M_GUEST_${Date.now()}`,
+          name: existingMember?.name || cleanName,
+          flatNo: existingMember?.flatNo || cleanFlat,
+          role: 'Society Member',
+          status: 'Active',
+          token: `demo_token_${Date.now()}`
+        };
+
+        onLoginSuccess(mockUser, mockUser.token!);
+      } else {
+        setErrorMessage('Unable to connect to authentication server. Please try again.');
+      }
     } finally {
       setIsLoading(false);
     }

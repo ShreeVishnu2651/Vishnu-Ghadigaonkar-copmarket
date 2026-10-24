@@ -51,6 +51,8 @@ import {
   mapNotificationToSupabase
 } from './supabase';
 
+import { DEMO_DATA } from './data/demoData';
+
 // Modular layouts
 import Sidebar from './components/Sidebar';
 import Dashboard from './components/Dashboard';
@@ -208,12 +210,23 @@ export default function App() {
   // System Loading state
   const [isLoading, setIsLoading] = useState(true);
 
-  // Local API fetching
+  // Local API fetching with static fallback for drag-and-drop deployments
   const fetchLocalData = useCallback(async (silent = false) => {
     if (!silent) {
       setIsLoading(true);
     }
     try {
+      const fetchWithTimeout = async (url: string) => {
+        try {
+          const r = await fetch(url);
+          if (!r.ok) throw new Error("HTTP error");
+          return await r.json();
+        } catch (e) {
+          console.warn(`Fetch failed for ${url}, using demo fallback.`);
+          return null;
+        }
+      };
+
       const [
         resMembers, 
         resProducts, 
@@ -223,24 +236,34 @@ export default function App() {
         resPayments, 
         resNotifications
       ] = await Promise.all([
-        fetch('/api/members').then(r => r.json()),
-        fetch('/api/products').then(r => r.json()),
-        fetch('/api/milk').then(r => r.json()),
-        fetch('/api/newspaper').then(r => r.json()),
-        fetch('/api/bills').then(r => r.json()),
-        fetch('/api/payments').then(r => r.json()),
-        fetch('/api/notifications').then(r => r.json())
+        fetchWithTimeout('/api/members'),
+        fetchWithTimeout('/api/products'),
+        fetchWithTimeout('/api/milk'),
+        fetchWithTimeout('/api/newspaper'),
+        fetchWithTimeout('/api/bills'),
+        fetchWithTimeout('/api/payments'),
+        fetchWithTimeout('/api/notifications')
       ]);
 
-      if (Array.isArray(resMembers)) setMembers(resMembers);
-      if (Array.isArray(resProducts)) setProducts(resProducts);
-      if (Array.isArray(resMilk)) setMilkSubs(resMilk);
-      if (Array.isArray(resNewspaper)) setNewspaperSubs(resNewspaper);
-      if (Array.isArray(resBills)) setBills(resBills);
-      if (Array.isArray(resPayments)) setPayments(resPayments);
-      if (Array.isArray(resNotifications)) setNotifications(resNotifications);
+      // Apply results or fall back to DEMO_DATA if API is missing (e.g. Netlify static drag-and-drop)
+      setMembers(Array.isArray(resMembers) ? resMembers : (DEMO_DATA.members || []));
+      setProducts(Array.isArray(resProducts) ? resProducts : (DEMO_DATA.products || []));
+      setMilkSubs(Array.isArray(resMilk) ? resMilk : (DEMO_DATA.milkSubscriptions || []));
+      setNewspaperSubs(Array.isArray(resNewspaper) ? resNewspaper : (DEMO_DATA.newspaperSubscriptions || []));
+      setBills(Array.isArray(resBills) ? resBills : (DEMO_DATA.bills || []));
+      setPayments(Array.isArray(resPayments) ? resPayments : (DEMO_DATA.payments || []));
+      setNotifications(Array.isArray(resNotifications) ? resNotifications : (DEMO_DATA.notifications || []));
+      
     } catch (err) {
-      console.error('CoopMart: Fetch failure from Express API', err);
+      console.error('CoopMart: Fetch error, falling back to static data', err);
+      // Absolute fallback
+      setMembers(DEMO_DATA.members || []);
+      setProducts(DEMO_DATA.products || []);
+      setMilkSubs(DEMO_DATA.milkSubscriptions || []);
+      setNewspaperSubs(DEMO_DATA.newspaperSubscriptions || []);
+      setBills(DEMO_DATA.bills || []);
+      setPayments(DEMO_DATA.payments || []);
+      setNotifications(DEMO_DATA.notifications || []);
     } finally {
       if (!silent) {
         setIsLoading(false);
