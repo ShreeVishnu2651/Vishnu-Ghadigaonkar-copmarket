@@ -8,23 +8,47 @@ import 'dotenv/config';
 // Load coopmart_db.json fallback
 const DB_FILE = path.join(process.cwd(), 'coopmart_db.json');
 
+// Robust data loading for serverless environments
 function loadDatabase() {
   try {
-    if (fs.existsSync(DB_FILE)) {
-      const data = fs.readFileSync(DB_FILE, 'utf8');
-      return JSON.parse(data);
+    // Try absolute path from project root first
+    const rootPath = path.join(process.cwd(), 'coopmart_db.json');
+    if (fs.existsSync(rootPath)) {
+      return JSON.parse(fs.readFileSync(rootPath, 'utf8'));
+    }
+    
+    // Fallback: check function local directory
+    const localPath = path.join(__dirname, 'coopmart_db.json');
+    if (fs.existsSync(localPath)) {
+      return JSON.parse(fs.readFileSync(localPath, 'utf8'));
     }
   } catch (e) {
     console.error('Error loading DB:', e);
   }
-  return { members: [], products: [], milkSubscriptions: [], newspaperSubscriptions: [], bills: [], payments: [], notifications: [], credentials: [], activeSessions: [] };
+  
+  // Return empty structure if all fails
+  return { 
+    members: [], 
+    products: [], 
+    milkSubscriptions: [], 
+    newspaperSubscriptions: [], 
+    bills: [], 
+    payments: [], 
+    notifications: [], 
+    credentials: [], 
+    activeSessions: [] 
+  };
 }
 
 function saveDatabase(db: any) {
+  // NOTE: On Netlify Functions, filesystem is read-only. 
+  // This will only work for the duration of the current function invocation.
+  // For permanent persistence, Supabase must be used.
   try {
-    fs.writeFileSync(DB_FILE, JSON.stringify(db, null, 2), 'utf8');
+    const dbPath = path.join(process.cwd(), 'coopmart_db.json');
+    fs.writeFileSync(dbPath, JSON.stringify(db, null, 2), 'utf8');
   } catch (e) {
-    console.error('Error saving DB:', e);
+    console.warn('Database save skipped (filesystem is read-only on serverless)');
   }
 }
 

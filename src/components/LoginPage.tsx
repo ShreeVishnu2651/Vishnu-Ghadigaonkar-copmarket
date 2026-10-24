@@ -115,11 +115,12 @@ export default function LoginPage({ onLoginSuccess }: LoginPageProps) {
         );
 
         const mockUser: UserSession = {
+          id: `SESS_${Date.now()}`,
           memberId: existingMember?.id || `M_GUEST_${Date.now()}`,
           name: existingMember?.name || cleanName,
           flatNo: existingMember?.flatNo || cleanFlat,
           role: 'Society Member',
-          status: 'Active',
+          email: existingMember?.email || '',
           token: `demo_token_${Date.now()}`
         };
 
