@@ -1,0 +1,662 @@
+{
+  "members": [
+    {
+      "id": "M870230",
+      "flatNo": "A-311",
+      "name": "abhishake ",
+      "phone": "8657131399",
+      "email": "vishnughadigaonkar10b@gmail.com",
+      "address": "ROOM NO 28 BUILDING NO 4 32 OFFICERS QTR",
+      "familyMembers": 1,
+      "joiningDate": "2026-09-09",
+      "status": "Active"
+    },
+    {
+      "id": "M102001",
+      "flatNo": "A-102",
+      "name": "Rahul Sharma",
+      "phone": "9820144521",
+      "email": "rahul.sharma@gmail.com",
+      "address": "Flat 102, Wing A, CoopMart Greens, Sector 14",
+      "familyMembers": 4,
+      "joiningDate": "2025-02-15",
+      "status": "Active"
+    },
+    {
+      "id": "M102002",
+      "flatNo": "B-204",
+      "name": "Priya Patel",
+      "phone": "9819233412",
+      "email": "priya.patel@gmail.com",
+      "address": "Flat 204, Wing B, CoopMart Greens, Sector 14",
+      "familyMembers": 3,
+      "joiningDate": "2025-03-10",
+      "status": "Active"
+    },
+    {
+      "id": "M102003",
+      "flatNo": "C-301",
+      "name": "Amit Verma",
+      "phone": "9769355210",
+      "email": "amit.verma@gmail.com",
+      "address": "Flat 301, Wing C, CoopMart Greens, Sector 14",
+      "familyMembers": 4,
+      "joiningDate": "2025-04-18",
+      "status": "Active"
+    },
+    {
+      "id": "M102004",
+      "flatNo": "D-105",
+      "name": "Sneha Kulkarni",
+      "phone": "9892066321",
+      "email": "sneha.kulkarni@gmail.com",
+      "address": "Flat 105, Wing D, CoopMart Greens, Sector 14",
+      "familyMembers": 2,
+      "joiningDate": "2025-05-01",
+      "status": "Active"
+    },
+    {
+      "id": "M102005",
+      "flatNo": "A-402",
+      "name": "Rajesh Deshmukh",
+      "phone": "9833177412",
+      "email": "rajesh.deshmukh@gmail.com",
+      "address": "Flat 402, Wing A, CoopMart Greens, Sector 14",
+      "familyMembers": 5,
+      "joiningDate": "2025-06-12",
+      "status": "Active"
+    },
+    {
+      "id": "M102006",
+      "flatNo": "B-101",
+      "name": "Anjali Nair",
+      "phone": "9821488523",
+      "email": "anjali.nair@gmail.com",
+      "address": "Flat 101, Wing B, CoopMart Greens, Sector 14",
+      "familyMembers": 3,
+      "joiningDate": "2025-07-20",
+      "status": "Active"
+    },
+    {
+      "id": "M102007",
+      "flatNo": "C-202",
+      "name": "Vikram Malhotra",
+      "phone": "9820599634",
+      "email": "vikram.malhotra@gmail.com",
+      "address": "Flat 202, Wing C, CoopMart Greens, Sector 14",
+      "familyMembers": 4,
+      "joiningDate": "2025-08-14",
+      "status": "Active"
+    },
+    {
+      "id": "M102008",
+      "flatNo": "D-304",
+      "name": "Pooja Iyer",
+      "phone": "9819711245",
+      "email": "pooja.iyer@gmail.com",
+      "address": "Flat 304, Wing D, CoopMart Greens, Sector 14",
+      "familyMembers": 2,
+      "joiningDate": "2025-09-05",
+      "status": "Active"
+    },
+    {
+      "id": "M102009",
+      "flatNo": "A-503",
+      "name": "Suresh Joshi",
+      "phone": "9867022356",
+      "email": "suresh.joshi@gmail.com",
+      "address": "Flat 503, Wing A, CoopMart Greens, Sector 14",
+      "familyMembers": 3,
+      "joiningDate": "2025-10-11",
+      "status": "Active"
+    },
+    {
+      "id": "M102010",
+      "flatNo": "B-405",
+      "name": "Kavita Rao",
+      "phone": "9892333467",
+      "email": "kavita.rao@gmail.com",
+      "address": "Flat 405, Wing B, CoopMart Greens, Sector 14",
+      "familyMembers": 4,
+      "joiningDate": "2025-11-22",
+      "status": "Active"
+    },
+    {
+      "id": "M102011",
+      "flatNo": "C-404",
+      "name": "Deepak Mehta",
+      "phone": "9820844578",
+      "email": "deepak.mehta@gmail.com",
+      "address": "Flat 404, Wing C, CoopMart Greens, Sector 14",
+      "familyMembers": 5,
+      "joiningDate": "2025-12-03",
+      "status": "Active"
+    },
+    {
+      "id": "M102012",
+      "flatNo": "D-202",
+      "name": "Sunita Shinde",
+      "phone": "9819955689",
+      "email": "sunita.shinde@gmail.com",
+      "address": "Flat 202, Wing D, CoopMart Greens, Sector 14",
+      "familyMembers": 2,
+      "joiningDate": "2026-01-08",
+      "status": "Active"
+    },
+    {
+      "id": "M102013",
+      "flatNo": "A-205",
+      "name": "Manoj Gupta",
+      "phone": "9833566790",
+      "email": "manoj.gupta@gmail.com",
+      "address": "Flat 205, Wing A, CoopMart Greens, Sector 14",
+      "familyMembers": 4,
+      "joiningDate": "2026-01-25",
+      "status": "Active"
+    },
+    {
+      "id": "M102014",
+      "flatNo": "B-302",
+      "name": "Neha Singhania",
+      "phone": "9821877801",
+      "email": "neha.singhania@gmail.com",
+      "address": "Flat 302, Wing B, CoopMart Greens, Sector 14",
+      "familyMembers": 3,
+      "joiningDate": "2026-02-14",
+      "status": "Active"
+    },
+    {
+      "id": "M102015",
+      "flatNo": "C-105",
+      "name": "Sanjay Gaikwad",
+      "phone": "9820388912",
+      "email": "sanjay.gaikwad@gmail.com",
+      "address": "Flat 105, Wing C, CoopMart Greens, Sector 14",
+      "familyMembers": 4,
+      "joiningDate": "2026-03-02",
+      "status": "Active"
+    },
+    {
+      "id": "M102016",
+      "flatNo": "D-401",
+      "name": "Swati Jadhav",
+      "phone": "9819499023",
+      "email": "swati.jadhav@gmail.com",
+      "address": "Flat 401, Wing D, CoopMart Greens, Sector 14",
+      "familyMembers": 3,
+      "joiningDate": "2026-03-19",
+      "status": "Active"
+    },
+    {
+      "id": "M102017",
+      "flatNo": "A-601",
+      "name": "Sachin Tendulkar",
+      "phone": "9867210134",
+      "email": "sachin.t@gmail.com",
+      "address": "Flat 601, Wing A, CoopMart Greens, Sector 14",
+      "familyMembers": 4,
+      "joiningDate": "2026-04-05",
+      "status": "Active"
+    },
+    {
+      "id": "M102018",
+      "flatNo": "B-502",
+      "name": "Meera Pillai",
+      "phone": "9892621245",
+      "email": "meera.pillai@gmail.com",
+      "address": "Flat 502, Wing B, CoopMart Greens, Sector 14",
+      "familyMembers": 2,
+      "joiningDate": "2026-04-22",
+      "status": "Active"
+    },
+    {
+      "id": "M102019",
+      "flatNo": "C-503",
+      "name": "Rohit Sawant",
+      "phone": "9820732356",
+      "email": "rohit.sawant@gmail.com",
+      "address": "Flat 503, Wing C, CoopMart Greens, Sector 14",
+      "familyMembers": 3,
+      "joiningDate": "2026-05-10",
+      "status": "Active"
+    }
+  ],
+  "products": [
+    {
+      "id": "P101",
+      "productName": "Amul Fresh Gold Milk (1L)",
+      "category": "Fresh Dairy",
+      "barcode": "8901262010015",
+      "price": 68,
+      "quantity": 133,
+      "expiryDate": "2026-06-25",
+      "supplierName": "Amul Dairy Corp",
+      "imageUrl": "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "P102",
+      "productName": "Aashirvaad Chakki Atta (5kg)",
+      "category": "Grains & Flours",
+      "barcode": "8901725181223",
+      "price": 265,
+      "quantity": 53,
+      "expiryDate": "2026-11-15",
+      "supplierName": "ITC Limited",
+      "imageUrl": "https://images.unsplash.com/photo-1574316071802-0d684efa7bf5?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "P103",
+      "productName": "Fortune Soya Health Oil (1L)",
+      "category": "Oils & Spices",
+      "barcode": "8911262010023",
+      "price": 135,
+      "quantity": 74,
+      "expiryDate": "2027-02-10",
+      "supplierName": "Adani Wilmar",
+      "imageUrl": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "P104",
+      "productName": "Tata Salt Lite (1kg)",
+      "category": "Oils & Spices",
+      "barcode": "8901058002315",
+      "price": 28,
+      "quantity": 30,
+      "expiryDate": "2028-01-01",
+      "supplierName": "Tata Consumer Products",
+      "imageUrl": "/images/tata_salt.jpg"
+    },
+    {
+      "id": "P105",
+      "productName": "Maggi Masala Noodles (280g)",
+      "category": "Snacks & Packed Food",
+      "barcode": "8901058895627",
+      "price": 48,
+      "quantity": 180,
+      "expiryDate": "2026-12-30",
+      "supplierName": "Nestle India",
+      "imageUrl": "https://images.unsplash.com/photo-1612927601601-6638404737ce?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "P106",
+      "productName": "Surf Excel Easy Wash (1kg)",
+      "category": "Household Care",
+      "barcode": "8901030753226",
+      "price": 140,
+      "quantity": 34,
+      "expiryDate": "2028-05-18",
+      "supplierName": "Hindustan Unilever",
+      "imageUrl": "/images/surf_excel.jpg"
+    },
+    {
+      "id": "P107",
+      "productName": "Parle-G Gold Biscuits (100g)",
+      "category": "Snacks & Packed Food",
+      "barcode": "8901163100204",
+      "price": 10,
+      "quantity": 24,
+      "expiryDate": "2026-10-01",
+      "supplierName": "Parle Products",
+      "imageUrl": "/images/parle_g.jpg"
+    },
+    {
+      "id": "P108",
+      "productName": "Britannia Cheese Slices (200g)",
+      "category": "Fresh Dairy",
+      "barcode": "8901063142075",
+      "price": 155,
+      "quantity": 50,
+      "expiryDate": "2026-07-20",
+      "supplierName": "Britannia Industries",
+      "imageUrl": "https://images.unsplash.com/photo-1628088062854-d1870b4553da?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "P109",
+      "productName": "Daawat Rozana Basmati Rice (5kg)",
+      "category": "Grains & Flours",
+      "barcode": "8901532100215",
+      "price": 375,
+      "quantity": 40,
+      "expiryDate": "2027-04-18",
+      "supplierName": "Daawat Foods",
+      "imageUrl": "https://images.unsplash.com/photo-1586201375761-83865001e31c?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "P110",
+      "productName": "Taj Mahal Tea (500g)",
+      "category": "Snacks & Packed Food",
+      "barcode": "8901030756784",
+      "price": 215,
+      "quantity": 60,
+      "expiryDate": "2027-11-20",
+      "supplierName": "Hindustan Unilever",
+      "imageUrl": "https://images.unsplash.com/photo-1576092768241-dec231879fc3?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "P111",
+      "productName": "Himalaya Neem Face Wash (150ml)",
+      "category": "Household Care",
+      "barcode": "8901138511257",
+      "price": 170,
+      "quantity": 45,
+      "expiryDate": "2028-03-10",
+      "supplierName": "Himalaya Wellness",
+      "imageUrl": "https://images.unsplash.com/photo-1608248597279-f99d160bfcbc?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "P112",
+      "productName": "Catch Turmeric Powder (200g)",
+      "category": "Oils & Spices",
+      "barcode": "8901356002341",
+      "price": 54,
+      "quantity": 80,
+      "expiryDate": "2027-09-15",
+      "supplierName": "DS Group",
+      "imageUrl": "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "P113",
+      "productName": "Cadbury Dairy Milk Silk (150g)",
+      "category": "Snacks & Packed Food",
+      "barcode": "8901058002316",
+      "price": 90,
+      "quantity": 120,
+      "expiryDate": "2027-01-25",
+      "supplierName": "Mondelez India",
+      "imageUrl": "/images/cadbury_dairy_milk.jpg"
+    },
+    {
+      "id": "P114",
+      "productName": "Dettol Liquid Handwash Refill (1.5L)",
+      "category": "Household Care",
+      "barcode": "8911262010044",
+      "price": 230,
+      "quantity": 35,
+      "expiryDate": "2028-09-30",
+      "supplierName": "Reckitt Benckiser",
+      "imageUrl": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "P115",
+      "productName": "Kissan Tomato Ketchup (950g)",
+      "category": "Snacks & Packed Food",
+      "barcode": "8901030751234",
+      "price": 145,
+      "quantity": 50,
+      "expiryDate": "2027-06-12",
+      "supplierName": "Hindustan Unilever",
+      "imageUrl": "https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "P116",
+      "productName": "Amul Pasteurised Butter (500g)",
+      "category": "Fresh Dairy",
+      "barcode": "8901262010123",
+      "price": 275,
+      "quantity": 90,
+      "expiryDate": "2026-10-18",
+      "supplierName": "Amul Dairy Corp",
+      "imageUrl": "https://images.unsplash.com/photo-1589985270826-4b7bb135bc9d?w=150&auto=format&fit=crop&q=80"
+    },
+    {
+      "id": "P166611",
+      "productName": "Parle-G Gold Biscuits (100g) Parle-G Gold Biscuits (100g)",
+      "category": "Fresh Dairy",
+      "price": 50,
+      "quantity": 100,
+      "barcode": "8901163100204",
+      "expiryDate": "2026-12-31",
+      "supplierName": "CoopMart Wholesaler",
+      "imageUrl": "https://images.unsplash.com/photo-1550583724-b2692b85b150?w=150&auto=format&fit=crop&q=80"
+    }
+  ],
+  "milkSubscriptions": [
+    {
+      "id": "MS695942",
+      "memberId": "M870230",
+      "memberName": "abhishake ",
+      "flatNo": "A-311",
+      "milkBrand": "Amul Gold",
+      "quantity": 2,
+      "deliveryTime": "Morning",
+      "pricePerLiter": 40,
+      "startDate": "2026-09-09",
+      "status": "Active"
+    },
+    {
+      "id": "MS102001",
+      "memberId": "M102001",
+      "memberName": "Rahul Sharma",
+      "flatNo": "A-102",
+      "milkBrand": "Amul Taaza (500ml)",
+      "quantity": 1,
+      "deliveryTime": "Morning",
+      "pricePerLiter": 60,
+      "startDate": "2025-02-20",
+      "status": "Active"
+    },
+    {
+      "id": "MS102002",
+      "memberId": "M102002",
+      "memberName": "Priya Patel",
+      "flatNo": "B-204",
+      "milkBrand": "Amul Gold (1L)",
+      "quantity": 2,
+      "deliveryTime": "Morning",
+      "pricePerLiter": 68,
+      "startDate": "2025-03-15",
+      "status": "Active"
+    },
+    {
+      "id": "MS102003",
+      "memberId": "M102003",
+      "memberName": "Amit Verma",
+      "flatNo": "C-301",
+      "milkBrand": "Gokul Cow Milk (500ml)",
+      "quantity": 1.5,
+      "deliveryTime": "Both",
+      "pricePerLiter": 56,
+      "startDate": "2025-04-20",
+      "status": "Active"
+    },
+    {
+      "id": "MS102005",
+      "memberId": "M102005",
+      "memberName": "Rajesh Deshmukh",
+      "flatNo": "A-402",
+      "milkBrand": "Amul Gold (1L)",
+      "quantity": 2,
+      "deliveryTime": "Morning",
+      "pricePerLiter": 68,
+      "startDate": "2025-06-15",
+      "status": "Active"
+    },
+    {
+      "id": "MS102007",
+      "memberId": "M102007",
+      "memberName": "Vikram Malhotra",
+      "flatNo": "C-202",
+      "milkBrand": "Mother Dairy Buffalo Milk",
+      "quantity": 1.5,
+      "deliveryTime": "Morning",
+      "pricePerLiter": 70,
+      "startDate": "2025-08-20",
+      "status": "Active"
+    }
+  ],
+  "newspaperSubscriptions": [
+    {
+      "id": "NS780190",
+      "memberId": "M870230",
+      "memberName": "abhishake ",
+      "flatNo": "A-311",
+      "newspaperName": "The Hindu",
+      "language": "English",
+      "monthlyCharge": 220,
+      "status": "Active"
+    },
+    {
+      "id": "NS102001",
+      "memberId": "M102001",
+      "memberName": "Rahul Sharma",
+      "flatNo": "A-102",
+      "newspaperName": "The Times of India",
+      "language": "English",
+      "monthlyCharge": 160,
+      "status": "Active"
+    },
+    {
+      "id": "NS102002",
+      "memberId": "M102002",
+      "memberName": "Priya Patel",
+      "flatNo": "B-204",
+      "newspaperName": "The Economic Times",
+      "language": "English",
+      "monthlyCharge": 180,
+      "status": "Active"
+    },
+    {
+      "id": "NS102005",
+      "memberId": "M102005",
+      "memberName": "Rajesh Deshmukh",
+      "flatNo": "A-402",
+      "newspaperName": "Maharashtra Times",
+      "language": "Marathi",
+      "monthlyCharge": 140,
+      "status": "Active"
+    },
+    {
+      "id": "NS102009",
+      "memberId": "M102009",
+      "memberName": "Suresh Joshi",
+      "flatNo": "A-503",
+      "newspaperName": "Loksatta",
+      "language": "Marathi",
+      "monthlyCharge": 130,
+      "status": "Active"
+    }
+  ],
+  "bills": [
+    {
+      "id": "BILL-102001",
+      "memberId": "M102001",
+      "memberName": "Rahul Sharma",
+      "flatNo": "A-102",
+      "billingMonth": "June 2026",
+      "groceryAmount": 1850,
+      "milkAmount": 900,
+      "newspaperAmount": 160,
+      "maintenanceAmount": 2500,
+      "gst": 290,
+      "discount": 100,
+      "totalAmount": 5300,
+      "paymentStatus": "Paid",
+      "dateGenerated": "2026-06-01"
+    },
+    {
+      "id": "BILL-102002",
+      "memberId": "M102002",
+      "memberName": "Priya Patel",
+      "flatNo": "B-204",
+      "billingMonth": "June 2026",
+      "groceryAmount": 2150,
+      "milkAmount": 2040,
+      "newspaperAmount": 180,
+      "maintenanceAmount": 2500,
+      "gst": 380,
+      "discount": 150,
+      "totalAmount": 7100,
+      "paymentStatus": "Paid",
+      "dateGenerated": "2026-06-01"
+    },
+    {
+      "id": "BILL-102005",
+      "memberId": "M102005",
+      "memberName": "Rajesh Deshmukh",
+      "flatNo": "A-402",
+      "billingMonth": "June 2026",
+      "groceryAmount": 1400,
+      "milkAmount": 2040,
+      "newspaperAmount": 140,
+      "maintenanceAmount": 2500,
+      "gst": 310,
+      "discount": 50,
+      "totalAmount": 6340,
+      "paymentStatus": "Unpaid",
+      "dateGenerated": "2026-06-01"
+    }
+  ],
+  "payments": [
+    {
+      "id": "TX954997",
+      "memberId": "M101",
+      "memberName": "Ramesh Sharma",
+      "flatNo": "A-102",
+      "amount": 772,
+      "paymentDate": "2026-09-09T15:05:00+00:00",
+      "paymentMethod": "UPI",
+      "transactionId": "REF-92671646",
+      "billId": null,
+      "status": "Success"
+    },
+    {
+      "id": "TXN-102001",
+      "memberId": "M102001",
+      "memberName": "Rahul Sharma",
+      "flatNo": "A-102",
+      "amount": 5300,
+      "paymentDate": "2026-09-09T17:29:56.382202+00:00",
+      "paymentMethod": "UPI",
+      "transactionId": "UPI-RS-883921004",
+      "billId": "BILL-102001",
+      "status": "Success"
+    },
+    {
+      "id": "TXN-102002",
+      "memberId": "M102002",
+      "memberName": "Priya Patel",
+      "flatNo": "B-204",
+      "amount": 7100,
+      "paymentDate": "2026-09-09T17:29:56.382202+00:00",
+      "paymentMethod": "Credit Card",
+      "transactionId": "CC-PP-994821005",
+      "billId": "BILL-102002",
+      "status": "Success"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NL722627",
+      "memberId": "M870230",
+      "memberName": "abhishake ",
+      "flatNo": "A-311",
+      "type": "Email",
+      "title": "Society Dues Reminder - May 2026 Cycle",
+      "message": "Hello Ramesh Sharma, this is an official CoopMart alert requesting payment for outstanding society invoices.",
+      "sentDate": "2026-09-09T15:08:00+00:00",
+      "status": "Sent"
+    },
+    {
+      "id": "NOTIF-102001",
+      "memberId": "M102001",
+      "memberName": "Rahul Sharma",
+      "flatNo": "A-102",
+      "type": "SMS",
+      "title": "Society Bill Paid",
+      "message": "Payment of ₹5,300.00 received successfully for June 2026 maintenance & utilities.",
+      "sentDate": "2026-09-09T17:29:56.601381+00:00",
+      "status": "Sent"
+    },
+    {
+      "id": "NOTIF-102005",
+      "memberId": "M102005",
+      "memberName": "Rajesh Deshmukh",
+      "flatNo": "A-402",
+      "type": "Email",
+      "title": "Monthly Society Bill Generated",
+      "message": "Your June 2026 bill of ₹6,340.00 has been generated. Due date is June 15, 2026.",
+      "sentDate": "2026-09-09T17:29:56.601381+00:00",
+      "status": "Sent"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "name": "CoopMart Society Billing System",
+  "description": "A modern web POS and society utility management dashboard with grocery stock tracking, milk delivery subscriptions, newspaper deliveries, billing automation, and transactional receipts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
