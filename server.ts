@@ -10,7 +10,7 @@ import crypto from 'crypto';
 import 'dotenv/config';
 import { createClient } from '@supabase/supabase-js';
 import { createServer as createViteServer } from 'vite';
-import { 
+import type { 
   Member, 
   Product, 
   MilkSubscription, 
@@ -18,7 +18,7 @@ import {
   Bill, 
   PaymentTransaction, 
   NotificationLog 
-} from './src/types';
+} from './src/types.ts';
 
 // Optional Supabase server-side client for notification synchronization
 let activeSupabaseUrl = process.env.VITE_SUPABASE_URL || process.env.SUPABASE_URL || '';
@@ -45,7 +45,7 @@ function reinitServerSupabase(url?: string, key?: string) {
 }
 
 const app = express();
-const PORT = 3000;
+const PORT = Number(process.env.PORT) || 3000;
 const DB_FILE = path.join(process.cwd(), 'coopmart_db.json');
 
 app.use(express.json());
